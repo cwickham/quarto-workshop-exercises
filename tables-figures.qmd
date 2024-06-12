@@ -1,0 +1,23 @@
+---
+title: "Tables and figures"
+format: html
+---
+
+1.  Create a 3 row x 2 col markdown table, populate with a column for restaurant + column for cuisine, and then add 3 examples. Then, cross reference it from text.
+
+2.  The code chunk below creates a plot:
+
+    a. Add a caption.
+    b. Create a cross-reference to it from the text.
+
+
+```{r}
+#| label: fig-density
+library(palmerpenguins)
+library(ggplot2)
+
+penguins |> 
+ggplot(aes(x = bill_length_mm, fill = species)) +
+  geom_density(alpha = 0.3) +
+  labs(x = "Bill length (mm)")
+```

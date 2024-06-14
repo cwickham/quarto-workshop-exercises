@@ -1,5 +1,6 @@
 ---
 title: "Hello, Penguins!"
+author: Charlotte Wickham
 format: html
 editor: visual
 ---
